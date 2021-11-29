@@ -1,0 +1,21 @@
+<div style="background-color: {{ divColor }};">
+    <div>
+        <input type="text" #inputNome/>
+        <button (click)="adicionarElemento(inputNome)">Adicionar</button>
+        <p *ngFor="let item of dados">{{ item }}</p>
+    </div>
+    
+    <div>
+        <!-- () -> faz binding TS para HTML -->
+        <input type="text" (keyup)="aoDigitar($event)"/>
+        
+        <!-- {{ }} -> text interpolation -->
+        <p>{{ valorDoInput }}</p>
+        
+        <hr/>
+    
+        <!-- [] -> faz biding HTML para TS -->
+        <p [innerHTML]="valorDoInput"></p>
+    </div>
+</div>
+

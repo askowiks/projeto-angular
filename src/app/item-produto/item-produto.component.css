@@ -1,0 +1,38 @@
+.item {
+    margin: 20px 30px;
+    text-align: center;
+}
+
+.item-foto {    
+    width: 200px;    
+}
+
+.item-titulo {
+    display: block;
+
+    margin: 10px 0px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.item-descricao {
+    display: block;
+
+    margin: 10px 0px;
+
+    text-align: center;
+    font-style: italic;
+    
+}
+
+.item-preco {
+    display: block;
+
+    margin: 10px 0px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6em;
+}

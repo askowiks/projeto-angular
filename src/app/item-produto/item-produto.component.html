@@ -1,0 +1,22 @@
+<div class="item">
+    <img class="item-foto" src="{{ imagemSrc }}" alt="foto do produto" />
+    <span class="item-titulo">{{ titulo }}</span>
+    <span class="item-descricao">{{ descricao }}</span>
+
+    <span class="item-preco">R$ {{ preco }}</span>
+    <input type="hidden" name="precoString" #precoString value="{{ preco }}"/>
+    
+    <button 
+            class="item-botao-cancelar" 
+            [disabled]="!botaoCancelarAtivado"
+            (click)="cancelarItem(precoString.value)">
+        Cancelar
+    </button>
+
+    <button 
+            class="item-botao-comprar" 
+            [disabled]="!botaoComprarAtivado"
+            (click)="comprarItem(precoString.value)">
+        Comprar
+    </button>
+</div>
